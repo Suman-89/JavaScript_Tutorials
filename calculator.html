@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        input
+        {
+            width: 150px;
+            height: 35px;
+            font-size: 22px;
+        }
+        .keypad 
+        {
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+            color: white;
+            font-size: 30px;
+            border-radius: 25px;
+        }
+        .operator
+        {
+            height: 50px;
+            width: 150px;
+            background-color: rgb(255, 153, 0);
+            color: white;
+            font-size: 30px;
+            border-radius: 20px;
+        }
+        .Off
+        {
+            height: 50px;
+            width: 150px;
+            border-radius: 20px;
+            background-color: red;
+            color: white;
+            font-size: 30;
+        }
+        .On
+        {
+            height: 50px;
+            width: 150px;
+            border-radius: 20px;
+            background-color: rgb(9, 255, 0);
+            color: white;
+            font-size: 30;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Calculator using Javascript</h1>
+    <table border="0" cellspacing="10" align="center" bgcolor="black">
+        <tr>
+            <td><input type="text" placeholder="number" style="width: 142px;"></td>
+            <td><input type="text" placeholder="number" style="width: 142px;"></td>
+            <td><input type="text" placeholder="number" style="width: 142px;"></td>
+        </tr>
+        <tr>
+            <th><input type="submit" value="1"class="keypad"></th>
+            <th><input type="submit" value="2"class="keypad"></th>
+            <th><input type="submit" value="3"class="keypad"></th>
+        </tr>
+        <tr>
+            <th><input type="submit" value="4"class="keypad"></th>
+            <th><input type="submit" value="5"class="keypad"></th>
+            <th><input type="submit" value="6"class="keypad"></th>
+        </tr>
+        <tr>
+            <th><input type="submit" value="7"class="keypad"></th>
+            <th><input type="submit" value="8"class="keypad"></th>
+            <th><input type="submit" value="9"class="keypad"></th>
+        </tr>
+        <tr>
+            <th><input type="submit" value="+" class="operator"></th>
+            <th><input type="submit" value="-"class="operator"></th>
+            <th><input type="submit" value="*"class="operator"></th>
+        </tr>
+        <tr>
+            <th><input type="submit" value="/"class="operator"></th>
+            <th><input type="submit" value="%"class="operator"></th>
+            <th><input type="submit" value="Off"class="Off"></th>
+        </tr>
+        <tr>
+            <th colspan="3"><input type="submit" value="On"class="On"></th>
+            
+        </tr>
+    </table>
+</body>
+</html>
