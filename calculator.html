@@ -15,23 +15,29 @@
             <td><input type="text" placeholder="Number2" style="width: 142px;"class="number" id="n2"></td>
             <td><input type="text" placeholder="Answar" style="width: 142px;"class="number" id="ans"></td>
         </tr>
+
+            <!--number button start-->
+
         <tr>
-            <th><input type="submit" value="1"class="keypad" id="1" onclick="onee()"></th>
-            <th><input type="submit" value="2"class="keypad"id="2"></th>
-            <th><input type="submit" value="3"class="keypad"id="3"></th>
+            <th><input type="submit" value="1"class="keypad"id="1" onclick="o1()"></th>
+            <th><input type="submit" value="2"class="keypad"id="2" onclick="t2()"></th>
+            <th><input type="submit" value="3"class="keypad"id="3" onclick="t3()"></th>
         </tr>
         <tr>
-            <th><input type="submit" value="4"class="keypad"id="4"></th>
-            <th><input type="submit" value="5"class="keypad"id="5"></th>
-            <th><input type="submit" value="6"class="keypad"id="6"></th>
+            <th><input type="submit" value="4"class="keypad"id="4" onclick="f4()"></th>
+            <th><input type="submit" value="5"class="keypad"id="5" onclick="f5()"></th>
+            <th><input type="submit" value="6"class="keypad"id="6" onclick="s6()"></th>
         </tr>
         <tr>
-            <th><input type="submit" value="7"class="keypad"id="7"></th>
-            <th><input type="submit" value="8"class="keypad"id="8"></th>
-            <th><input type="submit" value="9"class="keypad"id="9"></th>
+            <th><input type="submit" value="7"class="keypad"id="7" onclick="s7()"></th>
+            <th><input type="submit" value="8"class="keypad"id="8" onclick="e8()"></th>
+            <th><input type="submit" value="9"class="keypad"id="9" onclick="n9()"></th>
         </tr>
+
+        <!--number button end-->
+
         <tr>
-            <th><input type="submit" value="+" class="operator"id="+"></th>
+            <th><input type="submit" value="+"class="operator"id="+" onclick="sum()"></th>
             <th><input type="submit" value="-"class="operator"id="-"></th>
             <th><input type="submit" value="*"class="operator"id="*"></th>
         </tr>
@@ -46,5 +52,6 @@
     </table>
     <script src="calc.js" type="text/JavaScript">
     </script>
+    <script src="test.js" type="text/JavaScript"></script>
 </body>
 </html>

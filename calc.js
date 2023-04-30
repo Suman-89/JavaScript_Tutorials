@@ -69,7 +69,61 @@
 
             document.getElementById('off').disabled=false;
         }
-        function onee()
+
+            // function logic //
+
+        function o1()
         {
             document.getElementById('n1').value=1;
         }
+        function t2()
+        {
+            document.getElementById('n1').value=2;
+        }
+        function t3()
+        {
+            document.getElementById('n1').value=3;
+        }
+        function f4()
+        {
+            document.getElementById('n1').value=4;
+        }
+        function f5()
+        {
+            document.getElementById('n1').value=5;
+        }
+        function s6()
+        {
+            document.getElementById('n1').value=6;
+        }
+        function s7()
+        {
+            document.getElementById('n1').value=7;
+        }
+        function e8()
+        {
+            document.getElementById('n1').value=8;
+        }
+        function n9()
+        {
+            document.getElementById('n1').value=9;
+        }
+
+    // code for addition //
+        
+        function sum()
+        {
+            // var x = document.getElementById('n1').value;
+            // console.log('pravat',typeof x);
+            var a = parseInt(document.getElementById('n1').value);
+            // console.log('t',typeof a, a);
+            var b = parseInt(document.getElementById('n2').value);
+            var c = a+b;
+            parseInt(document.getElementById('ans').value=c);
+            
+        }
+        // sum();
+        
+
+
+      
