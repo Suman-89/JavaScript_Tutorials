@@ -6,11 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Calculator</title>
     <style>
+
+        table
+        {
+            border-radius: 10px;
+            background-color:rgb(12, 189, 51);
+            border-bottom: 12px;
+        }
         input
         {
             width: 150px;
             height: 35px;
             font-size: 22px;
+        }
+        .number
+        {
+            border-radius: 10px;
+            background-color: antiquewhite;
+            color: brown;
         }
         .keypad 
         {
@@ -50,43 +63,119 @@
         }
     </style>
 </head>
-<body>
-    <h1 align="center">Calculator using Javascript</h1>
-    <table border="0" cellspacing="10" align="center" bgcolor="black">
+<body bgcolor="azure">
+    <h1 align="center">Calculator using JavaScript</h1>
+    <table border="0" cellspacing="10" align="center">
         <tr>
-            <td><input type="text" placeholder="number" style="width: 142px;"></td>
-            <td><input type="text" placeholder="number" style="width: 142px;"></td>
-            <td><input type="text" placeholder="number" style="width: 142px;"></td>
+            <td><input type="text" placeholder="Number1" style="width: 142px;"class="number" id="n1"></td>
+            <td><input type="text" placeholder="Number2" style="width: 142px;"class="number" id="n2"></td>
+            <td><input type="text" placeholder="Answar" style="width: 142px;"class="number" id="ans"></td>
         </tr>
         <tr>
-            <th><input type="submit" value="1"class="keypad"></th>
-            <th><input type="submit" value="2"class="keypad"></th>
-            <th><input type="submit" value="3"class="keypad"></th>
+            <th><input type="submit" value="1"class="keypad" id="1" onclick="onee()"></th>
+            <th><input type="submit" value="2"class="keypad"id="2"></th>
+            <th><input type="submit" value="3"class="keypad"id="3"></th>
         </tr>
         <tr>
-            <th><input type="submit" value="4"class="keypad"></th>
-            <th><input type="submit" value="5"class="keypad"></th>
-            <th><input type="submit" value="6"class="keypad"></th>
+            <th><input type="submit" value="4"class="keypad"id="4"></th>
+            <th><input type="submit" value="5"class="keypad"id="5"></th>
+            <th><input type="submit" value="6"class="keypad"id="6"></th>
         </tr>
         <tr>
-            <th><input type="submit" value="7"class="keypad"></th>
-            <th><input type="submit" value="8"class="keypad"></th>
-            <th><input type="submit" value="9"class="keypad"></th>
+            <th><input type="submit" value="7"class="keypad"id="7"></th>
+            <th><input type="submit" value="8"class="keypad"id="8"></th>
+            <th><input type="submit" value="9"class="keypad"id="9"></th>
         </tr>
         <tr>
-            <th><input type="submit" value="+" class="operator"></th>
-            <th><input type="submit" value="-"class="operator"></th>
-            <th><input type="submit" value="*"class="operator"></th>
+            <th><input type="submit" value="+" class="operator"id="+"></th>
+            <th><input type="submit" value="-"class="operator"id="-"></th>
+            <th><input type="submit" value="*"class="operator"id="*"></th>
         </tr>
         <tr>
-            <th><input type="submit" value="/"class="operator"></th>
-            <th><input type="submit" value="%"class="operator"></th>
-            <th><input type="submit" value="Off"class="Off"></th>
+            <th><input type="submit" value="/"class="operator"id="/"></th>
+            <th><input type="submit" value="%"class="operator"id="%"></th>
+            <th><input type="submit" value="Off"id="off"class="Off" onclick="off()"></th>
         </tr>
         <tr>
-            <th colspan="3"><input type="submit" value="On"class="On"></th>
-            
+            <th colspan="3"><input type="submit" value="On"id="on"class="On" onclick="on()"></th>    
         </tr>
     </table>
+    <script>
+        function off()
+        {
+
+            //number button//
+
+
+            document.getElementById('n1').disabled=true;
+            document.getElementById('n2').disabled=true;
+            document.getElementById('ans').disabled=true;
+
+
+            // number button //
+
+
+            document.getElementById('1').disabled=true;
+            document.getElementById('2').disabled=true;
+            document.getElementById('3').disabled=true;
+            document.getElementById('4').disabled=true;
+            document.getElementById('5').disabled=true;
+            document.getElementById('6').disabled=true;
+            document.getElementById('7').disabled=true;
+            document.getElementById('8').disabled=true;
+            document.getElementById('9').disabled=true;
+
+            //operator button//
+
+            document.getElementById('+').disabled=true;
+            document.getElementById('-').disabled=true;
+            document.getElementById('*').disabled=true;
+            document.getElementById('/').disabled=true;
+            document.getElementById('%').disabled=true;
+
+            // off button //
+
+            document.getElementById('off').disabled=true;
+        }
+        function on()
+        {
+             //number button//
+
+
+             document.getElementById('n1').disabled=false;
+            document.getElementById('n2').disabled=false;
+            document.getElementById('ans').disabled=false;
+
+
+            // number button //
+
+
+            document.getElementById('1').disabled=false;
+            document.getElementById('2').disabled=false;
+            document.getElementById('3').disabled=false;
+            document.getElementById('4').disabled=false;
+            document.getElementById('5').disabled=false;
+            document.getElementById('6').disabled=false;
+            document.getElementById('7').disabled=false;
+            document.getElementById('8').disabled=false;
+            document.getElementById('9').disabled=false;
+
+            //operator button//
+
+            document.getElementById('+').disabled=false;
+            document.getElementById('-').disabled=false;
+            document.getElementById('*').disabled=false;
+            document.getElementById('/').disabled=false;
+            document.getElementById('%').disabled=false;
+
+            // off button //
+
+            document.getElementById('off').disabled=false;
+        }
+        function onee()
+        {
+            document.getElementById('n1').value=1;
+        }
+    </script>
 </body>
 </html>
