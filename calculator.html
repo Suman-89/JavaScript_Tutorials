@@ -5,63 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Calculator</title>
-    <style>
-
-        table
-        {
-            border-radius: 10px;
-            background-color:rgb(12, 189, 51);
-            border-bottom: 12px;
-        }
-        input
-        {
-            width: 150px;
-            height: 35px;
-            font-size: 22px;
-        }
-        .number
-        {
-            border-radius: 10px;
-            background-color: antiquewhite;
-            color: brown;
-        }
-        .keypad 
-        {
-            height: 50px;
-            width: 50px;
-            background-color: blue;
-            color: white;
-            font-size: 30px;
-            border-radius: 25px;
-        }
-        .operator
-        {
-            height: 50px;
-            width: 150px;
-            background-color: rgb(255, 153, 0);
-            color: white;
-            font-size: 30px;
-            border-radius: 20px;
-        }
-        .Off
-        {
-            height: 50px;
-            width: 150px;
-            border-radius: 20px;
-            background-color: red;
-            color: white;
-            font-size: 30;
-        }
-        .On
-        {
-            height: 50px;
-            width: 150px;
-            border-radius: 20px;
-            background-color: rgb(9, 255, 0);
-            color: white;
-            font-size: 30;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body bgcolor="azure">
     <h1 align="center">Calculator using JavaScript</h1>
@@ -100,82 +44,7 @@
             <th colspan="3"><input type="submit" value="On"id="on"class="On" onclick="on()"></th>    
         </tr>
     </table>
-    <script>
-        function off()
-        {
-
-            //number button//
-
-
-            document.getElementById('n1').disabled=true;
-            document.getElementById('n2').disabled=true;
-            document.getElementById('ans').disabled=true;
-
-
-            // number button //
-
-
-            document.getElementById('1').disabled=true;
-            document.getElementById('2').disabled=true;
-            document.getElementById('3').disabled=true;
-            document.getElementById('4').disabled=true;
-            document.getElementById('5').disabled=true;
-            document.getElementById('6').disabled=true;
-            document.getElementById('7').disabled=true;
-            document.getElementById('8').disabled=true;
-            document.getElementById('9').disabled=true;
-
-            //operator button//
-
-            document.getElementById('+').disabled=true;
-            document.getElementById('-').disabled=true;
-            document.getElementById('*').disabled=true;
-            document.getElementById('/').disabled=true;
-            document.getElementById('%').disabled=true;
-
-            // off button //
-
-            document.getElementById('off').disabled=true;
-        }
-        function on()
-        {
-             //number button//
-
-
-             document.getElementById('n1').disabled=false;
-            document.getElementById('n2').disabled=false;
-            document.getElementById('ans').disabled=false;
-
-
-            // number button //
-
-
-            document.getElementById('1').disabled=false;
-            document.getElementById('2').disabled=false;
-            document.getElementById('3').disabled=false;
-            document.getElementById('4').disabled=false;
-            document.getElementById('5').disabled=false;
-            document.getElementById('6').disabled=false;
-            document.getElementById('7').disabled=false;
-            document.getElementById('8').disabled=false;
-            document.getElementById('9').disabled=false;
-
-            //operator button//
-
-            document.getElementById('+').disabled=false;
-            document.getElementById('-').disabled=false;
-            document.getElementById('*').disabled=false;
-            document.getElementById('/').disabled=false;
-            document.getElementById('%').disabled=false;
-
-            // off button //
-
-            document.getElementById('off').disabled=false;
-        }
-        function onee()
-        {
-            document.getElementById('n1').value=1;
-        }
+    <script src="calc.js" type="text/JavaScript">
     </script>
 </body>
 </html>
