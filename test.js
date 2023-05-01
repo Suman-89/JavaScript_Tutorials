@@ -24,3 +24,5 @@ console.log('obj2arraybyentries->', Object.entries(obj1));
 
 var p = 4;
 console.log('p2-->', typeof p, p);
+var r = prompt("Enter Your Name :", "Suman");
+document.write(r);

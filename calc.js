@@ -123,6 +123,38 @@
             
         }
         // sum();
+        // code for substraction
+        function substraction()
+        {
+            var a = parseInt(document.getElementById('n1').value);
+            var b = parseInt(document.getElementById('n2').value);
+            var c = a-b;
+            parseInt(document.getElementById('ans').value=c);  
+        }
+        // code for multiplication
+        function multiplication()
+        {
+            var a = parseInt(document.getElementById('n1').value);
+            var b = parseInt(document.getElementById('n2').value);
+            var c = a*b;
+            parseInt(document.getElementById('ans').value=c);    
+        }
+        // code for division
+        function division()
+        {
+            var a = parseInt(document.getElementById('n1').value);
+            var b = parseInt(document.getElementById('n2').value);
+            var c = a/b;
+            parseInt(document.getElementById('ans').value=c);    
+        }
+        // code for modulus
+        function modulus()
+        {
+            var a = parseInt(document.getElementById('n1').value);
+            var b = parseInt(document.getElementById('n2').value);
+            var c = a%b;
+            parseInt(document.getElementById('ans').value=c);    
+        }
         
 
 
