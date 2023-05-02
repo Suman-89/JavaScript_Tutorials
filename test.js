@@ -75,3 +75,45 @@ let upprCase = stringName.toUpperCase(); // string to uppercase function
 console.log('uppercase-->', upprCase);
 let lowerCase = stringName.toLowerCase(); // string to Lowercase function
 console.log('lowerCase-->', lowerCase);
+
+
+// shift & unshift 
+const arry1 = [1,4,6,'ny','co'];
+let unShift = arry1.unshift('uk');
+console.log('unshift-->', unShift, 'Uarr7-->', arry1);
+let shift = arry1.shift();
+console.log('shift-->',shift,'shiftarry1-->',arry1);
+
+// splice
+
+const arry2 = [1,4,6,7,5,3];
+let splice = arry2.splice(1,4);
+console.log('splice-->', splice,'aarry2-->', arry2);
+
+const arry3 = ['a','b','c','d'];
+let spliceModify = arry3.splice(2,0,'e','f'); // position, index, element/elements , 0 means modification.
+console.log('spliceModify-->', spliceModify, 'arry3-->',arry3);
+
+
+// slice function
+
+const arry4 = [1,3,5,6,7];
+let slice = arry4.slice(2,3);
+console.log('slice-->', slice);
+
+//includes function returns boolean value
+
+const includes = arry4.includes(3,5);
+console.log('includes-->', includes);
+
+// blank array
+
+const arry5=[];
+let add = arry5.push(1,2,3);
+console.log('arry5-->',arry5);
+
+//array of object
+
+let arrObj1 = [{'name':'suman','place':'kolkata'}];
+const arrayObjPush = arry5.push(arrObj1);
+console.log('arrayObjPush',arry5);
