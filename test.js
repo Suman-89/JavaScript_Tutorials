@@ -6,7 +6,10 @@ var q = '4';
 console.log('q-->', q);
 var y = parseInt(q);
 console.log('y-->', typeof parseInt(q), parseInt(q));
+console.log('yy-->', typeof y, y);
+
 var t = '';
+console.log('show t -->', t);
 let arr1 = [1,2,3,3,5,6,7,8];
 generic(arr1);
 console.log('arr1-->',typeof arr1, arr1);
@@ -17,6 +20,7 @@ console.log('arr1obj', arr2obj);
 console.log('print5-->', typeof arr1[4], arr1[4]);
 let arr2 = ['1','2'];
 console.log('arr2-->', typeof arr2, arr2[1]);
+
 let obj1 = {'name':'suman','place':'kolkata'};
 console.log('obj1-->', typeof obj1, obj1);
 console.log('obj2arraybykey-->', Object.keys(obj1));
@@ -117,3 +121,80 @@ console.log('arry5-->',arry5);
 let arrObj1 = [{'name':'suman','place':'kolkata'}];
 const arrayObjPush = arry5.push(arrObj1);
 console.log('arrayObjPush',arry5);
+
+// find function for testing purpose
+
+const arr9 = [1,3,4,5,6];
+
+const newData = 20;
+newGeneric(newData);
+
+function newGeneric(argForGen) {
+  console.log('argForGen->', argForGen);
+  const sum = argForGen + 4;
+  console.log('sum->', sum);
+  gen2(sum);
+}
+
+function gen2(newAr5) {
+  console.log('newAr5->', newAr5);
+}
+
+const findArr1 = [1, 2, 3];
+
+const findOps1 = findArr1.find((e) => e % 2 == 0);
+console.log('findOps1-->', findOps1);
+
+const findOps2 = findArr1.find((e) => e < 1);
+console.log('findOps2-->', findOps2);
+
+const arrObj = [
+    {
+      userId: 1,
+      id: 1,
+      title: 'sunt',
+    },
+    {
+      userId: 1,
+      id: 2,
+      title: 'quit',
+    },
+    {
+      userId: 1,
+      id: 3,
+      title: 'ea molestias quasi exercitationem repellat qui ipsa sit aut',
+    },
+    {
+      userId: 1,
+      id: 4,
+      title: 'eum et est occaecati',
+    },
+    {
+      userId: 1,
+      id: 5,
+      title: 'nesciunt quas odio',
+    },
+  ];
+
+  const findOps3 = arrObj.find((data) => data.id == 5);
+  console.log('findOps3->', findOps3);
+  
+  arrObj.map((mapData, index) => console.log('mapData-->', mapData.title ,'count--->', index+1));
+  const arrObjcopy = arrObj.map((mapData, index) => mapData.title);
+  console.log('arrObjcopy-->',arrObjcopy);
+
+  // math 
+
+let circles = [10, 30, 50];
+
+const circleArea = (radius) => {
+  return Math.floor(Math.PI * radius * radius);
+};
+let areas = circles.map(circleArea);
+console.log('areas=>', areas);
+
+// filter
+
+arrObj.filter((data) => console.log('fdataid', data.id>2));
+let fdata = arrObj.filter((data) => data.id > 2);
+console.log('fdata-->',fdata);
