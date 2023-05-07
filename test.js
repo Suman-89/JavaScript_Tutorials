@@ -193,8 +193,77 @@ const circleArea = (radius) => {
 let areas = circles.map(circleArea);
 console.log('areas=>', areas);
 
+
+
+
+console.log('math', Math);
+const newArea = circles.map((rad) => Math.floor(Math.PI*rad*rad));
+console.log('newArea-->', newArea);
+
 // filter
 
 arrObj.filter((data) => console.log('fdataid', data.id>2));
 let fdata = arrObj.filter((data) => data.id > 2);
 console.log('fdata-->',fdata);
+
+let circles1 = [
+  20, 40, 60
+];
+console.log('crl-->',circles1.length); // 3
+
+let numbers = [10, , 20, 30];
+console.log('no.-->',numbers.length); // 4
+numbers[12]=200;
+console.log('no2-->', numbers); // 13 
+
+/// Reduce
+
+let reduceOps = circles.reduce((prev, curr) => prev + curr);
+
+console.log('reduceOps->', reduceOps);
+
+let reduceRightOps = circles.reduceRight((prev, curr) => prev * curr);
+console.log('reduceRightOps->', reduceRightOps);
+
+// 
+
+let reduceOpsT1 = circles.reduce( (prev, curr) => {
+  return (prev + curr);
+}, 0);
+console.log('reduceOpsT1->', reduceOpsT1);
+let reduceOpsT2 = circles.reduce(function (prev, curr) {
+  return prev + curr;
+});
+
+console.log('reduceOpsT2->', reduceOpsT2);
+// every
+var array5 = [2,1];
+let everyResult = array5.every((f) => f >= 0);
+console.log('everyResult-->', everyResult);
+
+
+// some 
+
+let someRes = array5.some((s) => s > 6);
+console.log('someRes-->', someRes);
+
+//sort
+
+let alpArr1 = [1, 4, 2, 3];
+
+let sortedIncArr = alpArr1.sort((p, s) => {
+  return p - s;
+});
+
+console.log('sortedIncArr->', sortedIncArr);
+
+let sortedDecArr = alpArr1.sort((p, s) => {
+  return s - p;
+});
+
+console.log('sortedDecArr->', sortedDecArr);
+
+let alpArr2 = [10,100,1,40,3,400,30];
+
+let alpOrder2 = alpArr2.sort();
+console.log('alpOrder2-->', alpOrder2);
