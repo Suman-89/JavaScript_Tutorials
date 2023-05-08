@@ -267,3 +267,49 @@ let alpArr2 = [10,100,1,40,3,400,30];
 
 let alpOrder2 = alpArr2.sort();
 console.log('alpOrder2-->', alpOrder2);
+ // for each
+
+ let ranks = ['A', 'B', 'C'];
+ console.log('ranks-->',ranks);
+for (let i = 0; i < ranks.length; i++) {
+    console.log('ranks-->',ranks[i]);
+}
+
+let ranks1 = ['A', 'B', 'C'];
+
+ranks1.forEach(function name(params) { 
+  console.log('params-->',params);
+})
+
+
+// forEach
+
+ranks1.forEach((parameter) => console.log(parameter));
+
+//flat
+
+const details = [
+  [1,2,3,4,[98,'j',5,'h',[98,'j',5,'h',[98,'j',5,'h']]]],
+];
+let flatData = details.flat();
+console.log('flatData-->', flatData);
+//count 2 
+let flatData1 = details.flat(2);
+console.log('flatData1-->', flatData1);
+//infinity
+let flatData2 = details.flat(Infinity);
+console.log('flatData2-->', flatData2);
+
+//join
+
+let ranks2 = ['A', 'B', 'C'];
+let r = ranks2.join('');
+console.log('r-->', typeof r, r);
+
+
+let name3 = ['farhan','khan'];
+let hyp = name3.join('-').toUpperCase();
+console.log('hyp-->',hyp);
+
+let hyp1 = name3.join('_').toUpperCase();
+console.log('hyp1-->', typeof hyp1, hyp1);
