@@ -40,5 +40,23 @@ const citySort = city1.reverse();
 console.log('citySort-->', citySort);
 
 
+// unShif
+const kolkata = ['rajpur','hedua','kalighat','sovabajzar'];
+console.log('Kolkata-->', kolkata);
 
+// after using unshift 
+const newKolkata = kolkata.unshift('sealdah');
+console.log('newKolkata-->', kolkata);
 
+//using shift 
+const newKolkata1 = kolkata.shift();
+console.log('newKolkata1--->', kolkata);
+
+const str = 'Suman Kumar Mukherjee';
+const spl = str.split('');
+console.log('spl-->', spl);
+const str1 = [];
+const str2 = str1.unshift(str);
+console.log(str1);
+let f = str1.join('_');
+console.log('f-->', f);

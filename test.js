@@ -113,7 +113,7 @@ console.log('includes-->', includes);
 // blank array
 
 const arry5=[];
-let add = arry5.push(1,2,3);
+arry5.push(1,2,3);
 console.log('arry5-->',arry5);
 
 //array of object
@@ -312,4 +312,38 @@ let hyp = name3.join('-').toUpperCase();
 console.log('hyp-->',hyp);
 
 let hyp1 = name3.join('_').toUpperCase();
-console.log('hyp1-->', typeof hyp1, hyp1);
+console.log('hyp1Type-->', typeof hyp1,'hyp1-->', hyp1);
+
+///string method
+
+// includes
+let email = 'admin@example.com';
+console.log('includesString-->',email.includes('e'));
+
+// trim 
+let str = '  JS trim  ';
+let result = str.trim('').split('');
+console.log(result);
+
+///padStart
+const str1 = '1234'.padStart(8,'0');
+console.log({str1}); // "00001234"
+
+const str2 = '1234'.padStart(6);
+console.log({str2}); // "00001234"
+
+const str3 = 'date'.padEnd(7,'new');
+console.log({str3});
+
+let bs = '';
+let fullData = bs.concat('cycle');
+console.log('fullData-->',fullData);
+
+// replace
+const str4 = 'Suman Kumar Mukherjee';
+const rData = str4.replace('Suman','Ram');
+console.log('rData-->',rData);
+
+const str5 = 'Suman Suman Suman Suman Kumar Mukherjee';
+const rData1 = str5.replaceAll('Suman','Ram');
+console.log('rData1-->',rData1);
