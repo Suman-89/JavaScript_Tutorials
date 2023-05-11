@@ -347,3 +347,6 @@ console.log('rData-->',rData);
 const str5 = 'Suman Suman Suman Suman Kumar Mukherjee';
 const rData1 = str5.replaceAll('Suman','Ram');
 console.log('rData1-->',rData1);
+
+let sdata = 'dipak kundu dipak kundu dipak kundu'.replaceAll('dipak','amal');
+console.log('sdata-->', sdata);

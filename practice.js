@@ -56,7 +56,37 @@ const str = 'Suman Kumar Mukherjee';
 const spl = str.split('');
 console.log('spl-->', spl);
 const str1 = [];
-const str2 = str1.unshift(str);
+str1.unshift(str);
 console.log(str1);
-let f = str1.join('_');
-console.log('f-->', f);
+
+// replace & replaceAll
+
+let sdata = 'dipak kundu dipak kundu dipak kundu'.replaceAll('dipak','amal');
+console.log('sdata-->', sdata);
+
+// concat string method
+let newStr = 'New';
+let concatStr = newStr.concat('_','York');
+console.log('concatStr-->', typeof concatStr, concatStr);
+
+
+// concatenation of array of strings
+let colors = ['Blue',' ','Green',' ','Teal'];
+let result = ''.concat(...colors);
+console.log(result);
+
+// number into a string by concat
+let nos1 = '';
+let nos2 = nos1.concat(1,2,3,4,5,6);
+console.log('nos2-->', nos2);
+console.log('length off string nos2-->', nos2.length);
+
+
+// slice method 
+console.log('examination'.length);
+let str2 = 'examination'.slice(2,6);
+console.log('str2-->', str2, 'length-->', str2.length);
+let str3 = 'examination'.slice(-7);
+console.log('str3-->', str3);
+let index = 'examination'.slice(2,'examination'.indexOf('t'));
+console.log('index-->', index, 'length-->', index.length);
