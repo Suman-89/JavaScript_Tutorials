@@ -350,3 +350,18 @@ console.log('rData1-->',rData1);
 
 let sdata = 'dipak kundu dipak kundu dipak kundu'.replaceAll('dipak','amal');
 console.log('sdata-->', sdata);
+
+// object to array
+let obj3 = {'city' : 'delhi'};
+console.log('objToArr-->', Object.entries(obj3));
+
+// array to Object
+let arr11 = [1,2,3,4];
+let arry = Object.assign(arr11);
+console.log('arry->', typeof arry, arry);
+
+let Arrname = [1,2,3,4,5];
+let srrt = Arrname.sort((p,s) => s-p);
+console.log('srrt-->', srrt);
+let srrt2 = Arrname.sort((p,s) => p-s);
+console.log(srrt2);

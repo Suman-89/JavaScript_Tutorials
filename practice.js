@@ -145,18 +145,40 @@ console.log(trm2, trm2.length);
 let incl = 'Suman Kumar Mukherjee';
 console.log(incl.includes('Kumar')); 
 
-// object to array
-let obj3 = {'city' : 'delhi'};
-console.log('objToArr-->', Object.entries(obj3));
+let idx = 'Examination'.lastIndexOf('n');
+console.log(idx);
 
-// array to Object
-let arr11 = [1,2,3,4];
-let arry = Object.assign(arr11);
-console.log('arry->', typeof arry, arry);
+let idx1 = 'Examination'.lastIndexOf('n',7);
+console.log(idx1);
 
-let Arrname = [1,2,3,4,5];
-let srrt = Arrname.sort((p,s) => s-p);
-console.log('srrt-->', srrt);
-let srrt2 = Arrname.sort((p,s) => p-s);
-console.log(srrt2);
+let idx2 = 'Examination'.lastIndexOf('T');
+console.log(idx2);
 
+let idx3 = 'Examination'.toLocaleUpperCase().lastIndexOf('T');
+console.log(idx3);
+
+//search string method
+let srch = 'I am invincible !';
+
+let idx4 = srch.search(/[0-9]/);
+console.log(idx4);
+
+let idx5 = srch.search(/[a-z]/);
+console.log(idx5);
+
+// splice array method
+let me = ['suman','kumar','mukherjee'];
+me.splice(1,0,'dev');
+console.log(me);
+
+//array like object into array
+function tr() {
+    return Array.prototype.slice.call(arguments);
+}
+let ntr = tr('suman','dev','kumar','mukherjee');
+console.log(ntr);
+
+//map
+let mdata = [25,35,45];
+let mresult = mdata.map(Math.sqrt);
+console.log(mresult);
