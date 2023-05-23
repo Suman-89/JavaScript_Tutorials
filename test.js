@@ -319,6 +319,9 @@ console.log('hyp1Type-->', typeof hyp1,'hyp1-->', hyp1);
 // includes
 let email = 'admin@example.com';
 console.log('includesString-->',email.includes('e'));
+function sub(a,b){
+  return a-b;
+}
 
 // trim 
 let str = '  JS trim  ';
@@ -365,3 +368,18 @@ let srrt = Arrname.sort((p,s) => s-p);
 console.log('srrt-->', srrt);
 let srrt2 = Arrname.sort((p,s) => p-s);
 console.log(srrt2);
+
+
+//substraction//
+
+let diff = sub(20,10);
+console.log('diff-->',diff);
+
+//multiplication//
+function suman(p,q){
+  return p*q;
+}
+let mul = suman(20,3);
+console.log('mul-->',mul);
+
+//compare
